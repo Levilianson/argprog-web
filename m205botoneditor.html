@@ -8,16 +8,21 @@
     <!-- Css Boostrap-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
+    <button type="button" id="botfunc" onclick="FBoton()">on
+    </button>
     <h1 class="text-success"> MI primer Boostrap</h1>
     <div class="card mat-card">
-        <div class="card-titles">
+        <div class="card-title">
             <h2>Hacerca de </h2>
-            <div class="btn-edit" onclick="cambiar_parrafo">
-            <a href="#" class="btn-right">
-                <i class="fa fa-pen"></i>
-            </a>
+            <div class="btn-edit justify-content-center" onclick="cambiar_parrafo()">
+                    <a href="#" class="btn ">hola 
+                        <i class="btn"></i>
+                    </a>
+        
+                </button>
         </div>
         <div>
             <p id="text-acercade"> Lorem ipsum dolor sit amet consectetur.</p>
@@ -26,20 +31,43 @@
             <input id="edit-acercade" type="text" oninput="myfunction2(this.value)" style="display:none">
         </div>
         </div>
+        <div class="card-body" >
+            <svg class="bi text-primary" width="5rem" height="5rem" fill="currentColor">
+                <use xlink:href="./iconosboos/bootstrap-icons.svg#trophy-fill"/>
+              </svg>
+            <div class="d-grip grap-2 d-flex justify-content-center">
+                <button class="btn" type="button">
+                    <svg class="bi text-primary" width="5rem" height="5rem" fill="currentColor">
+                        <use xlink:href="./iconosboos/bootstrap-icons.svg#trophy-fill"/>
+                      </svg>
+         
+                </button>
+
+            </div>
+            <h5 class="mt-4">Favorites</h5>
+            <p>Keep all of your most valuable tools together in one spot.</p>
+
+        </div>
+        <div class="card-footer" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <div class="d-grip grap-2 d-flex justify-content-center">
+                <p href="#" class="btn btn-primary">
+                    <svg class="bi text-primary" width="5rem" height="5rem" fill="currentColor">
+                        <use xlink:href="./iconosboos/bootstrap-icons.svg#trophy-fill"/>
+                    </svg>Go somewhere
+                </p>
+              </div>
+            </div>
+          </div>
     </div>
+    <input type="file" id="file1" onchange="showFile(this)">
+
     <!-- usar el dom para cambier el valor con java-->
-    <script>
-        function cambiar_parrafo(){
-            document.getElementById("edit-acercade").style.display="block";
-            let texto= document.getElementById("text-acercade").innerText;
-            console.log(texto);
-        };
-        function myfunction2(valor){
-            document.getElementById("text-acercade").innerText=valor;
-        }
-    </script>
 
     <!-- Js Boostrap-->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./m205.js"></script>
 </body>
 </html>
